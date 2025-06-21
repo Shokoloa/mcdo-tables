@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en" data-theme="default">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="google" content="notranslate">
+  <link rel="manifest" href="/manifest.json">
+
+  <meta http-equiv="Cache-Control" content="max-age=31536000">
+
+  <!-- Base -->
+  <title>McDonald's Lamballe - Tables</title>
+  <meta name="title" content="Mcdo Tables">
+  <meta name="theme-color" content="#0055ff">
+  <meta name="description" content="">
+  <link rel="icon" href="/favicon.webp">
+
+  <!-- Google / Search Engine Tags -->
+  <meta name="keywords"
+    content="Mcdo Tables, discord, bot, bump, moderation, utilitaire, fun, Mcdo Tables bot, français, discord bump">
+  <meta itemprop="name" content="Mcdo Tables">
+  <meta itemprop="description" content="">
+
+  <!-- OpenGraph -->
+  <meta property="description" content="" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mcdo-tables.vercel.app/">
+  <meta property="og:title" content="Mcdo Tables">
+  <meta property="og:description" content="">
+  <meta name="og:image" content="https://i.ibb.co/KJVTMVB/mcdo.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Mcdo Tables">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://i.ibb.co/KJVTMVB/mcdo.png">
+
+  <style>
+    .loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      --color: hsl(0, 0%, 87%);
+      --animation: 2s ease-in-out infinite;
+    }
+
+    .loader .circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      border: solid 2px var(--color);
+      border-radius: 50%;
+      margin: 0 10px;
+      background-color: transparent;
+      transform: scale(1.5);
+      opacity: 0.5;
+      animation: circle-keys var(--animation);
+    }
+
+    .loader .circle .dot {
+      position: absolute;
+      transform: translate(-50%, -50%) scale(0);
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: var(--color);
+      animation: dot-keys var(--animation);
+    }
+
+    .loader .circle .outline {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      animation: outline-keys var(--animation);
+    }
+
+    .loader .circle:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+
+    .loader .circle:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    .loader .circle:nth-child(4) {
+      animation-delay: 0.9s;
+    }
+
+    .loader .circle:nth-child(5) {
+      animation-delay: 1.2s;
+    }
+
+    .loader .circle:nth-child(2) .dot {
+      animation-delay: 0.3s;
+    }
+
+    .loader .circle:nth-child(3) .dot {
+      animation-delay: 0.6s;
+    }
+
+    .loader .circle:nth-child(4) .dot {
+      animation-delay: 0.9s;
+    }
+
+    .loader .circle:nth-child(5) .dot {
+      animation-delay: 1.2s;
+    }
+
+    .loader .circle:nth-child(1) .outline {
+      animation-delay: 0.9s;
+    }
+
+    .loader .circle:nth-child(2) .outline {
+      animation-delay: 1.2s;
+    }
+
+    .loader .circle:nth-child(3) .outline {
+      animation-delay: 1.5s;
+    }
+
+    .loader .circle:nth-child(4) .outline {
+      animation-delay: 1.8s;
+    }
+
+    .loader .circle:nth-child(5) .outline {
+      animation-delay: 2.1s;
+    }
+
+    @keyframes circle-keys {
+      0% {
+        transform: scale(1.5);
+        opacity: 0.5;
+      }
+
+      50% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1.5);
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes dot-keys {
+      0% {
+        transform: scale(0);
+      }
+
+      50% {
+        transform: scale(1);
+      }
+
+      100% {
+        transform: scale(0);
+      }
+    }
+
+    @keyframes outline-keys {
+      0% {
+        transform: scale(0);
+        outline: solid 20px var(--color);
+        outline-offset: 0;
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1);
+        outline: solid 0 transparent;
+        outline-offset: 20px;
+        opacity: 0;
+      }
+    }
+
+    /* 404 */
+
+    .row {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .row svg {
+      width: 100%;
+      margin: 0 50vh 0 -20px;
+    }
+
+    .cat-container h1 {
+      font: 30px mont;
+    }
+
+    .cat-container p {
+      font: 15px inter;
+      color: var(--text-grey);
+    }
+
+    .defaulterror {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .defaulterror h1 {
+      font: 35px mont;
+      text-align: center;
+    }
+
+    .defaulterror p {
+      font: 16px inter;
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .defaulterror button.active {
+      background-color: #2a9d8f;
+    }
+
+    @media screen and (max-width: 767px) {
+      .row {
+        flex-direction: column;
+      }
+
+      .row svg {
+        margin: 0;
+      }
+
+      .cat-container {
+        margin: 0 20px;
+      }
+
+      .defaulterror {
+        margin: 0 20px;
+      }
+
+      .defaulterror h1 {
+        font-size: 20px;
+      }
+
+      .defaulterror p {
+        font-size: 13px;
+      }
+    }
+
+    .errorpage button {
+      padding: 10px 15px;
+      margin: 0 10px;
+      color: var(--text-grey);
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script type="module" src="/src/index.jsx"></script>
+</body>
+
+</html>

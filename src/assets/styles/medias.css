@@ -1,0 +1,714 @@
+@media only screen and (min-width: 1024px) {
+  /*deskop*/
+}
+
+@media screen and (min-width: 767px) and (max-width:1023px) {
+  /*tablet*/
+}
+
+@media screen and (max-width: 767px) {
+  /*smartphone*/
+
+  .bg img {
+    height: 100vh;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .logo {
+    margin: 10px;
+  }
+
+  .logo h1 {
+    font: 600 20px inter;
+    margin-left: 10px;
+  }
+
+  .menu-bar .nav-link {
+    font: 600 12px inter;
+    padding: 5px 5px;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .config-menu {
+    width: 350px;
+  }
+
+  .config-menu h2 {
+    font: 18px mont;
+  }
+
+  .config-menu h2 i {
+    font-size: 20px;
+  }
+
+  .clearcache-menu {
+    width: 350px;
+    height: 170px;
+  }
+
+  .clearcache-menu h2 {
+    font: 22px mont;
+  }
+
+  .clearcache-menu p {
+    font: 12px inter;
+  }
+
+  /* Footer */
+  .footer {
+    align-items: center;
+    padding: 5vh 2vw 5vh 2vw;
+    flex-direction: column;
+  }
+
+  .footer-left {
+    display: none;
+  }
+
+  .footer-right {
+    margin-top: 20px;
+    align-items: flex-start;
+  }
+
+  .footer-right .footer-field {
+    margin: 0 20px;
+  }
+
+  /* Hero */
+  .hero {
+    justify-content: center;
+    margin: 5vh 0 0 0;
+  }
+
+  .hero .news {
+    font: 500 12px inter;
+    padding: 7px;
+  }
+
+  .hero h1 {
+    font: 23px mont;
+  }
+
+  .hero p {
+    font: 11px inter;
+  }
+
+  .hero .buttons {
+    margin-bottom: 10vh;
+  }
+
+  .hero .buttons button:first-child {
+    font: 500 12px inter;
+    padding: 7px 12px;
+    margin: 0 10px;
+  }
+
+  .hero .buttons button:first-child svg {
+    width: 15px;
+    margin: 0 5px -2px 0;
+  }
+
+  .hero .buttons .secondary-button {
+    padding: 7px 12px;
+    font: 400 12px inter;
+  }
+
+  .hero .buttons .secondary-button svg {
+    width: 15px;
+    margin: 0 7px -5px 0;
+  }
+
+  .subtittles {
+    height: 50px;
+  }
+
+  .word {
+    font: 600 25px mont;
+  }
+
+  /* Guilds Slider */
+
+  .landing_guilds,
+  .marquee-content {
+    display: none;
+  }
+
+  /* Funcs */
+
+  .funcs-box {
+    margin: 5vh 0;
+  }
+
+  .funcs-item {
+    margin: 0 15px 20px;
+    padding: 10px;
+  }
+
+  .funcs-item h2 {
+    margin-bottom: 7px;
+  }
+
+  /* Reviews */
+  .reviews h2 {
+    margin: 20px;
+    font: 18px mont;
+  }
+
+  .reviews .review-card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .review-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Legal */
+  .legal,
+  .changelog {
+    background-color: rgb(23 24 33/0.5);
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 10vh;
+  }
+
+  .legal h2,
+  .legal-content h3,
+  .changelogtitle h2,
+  .changelog-content h3 {
+    font: 700 20px inter;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  .legal p,
+  .changelog-content p {
+    font: 600 13px inter;
+  }
+
+  /* Commands */
+  .commands {
+    margin: 0 3vw;
+  }
+
+  .commands .commands_title {
+    font: 25px mont;
+  }
+
+  .commands .commands_subtitle {
+    font: 11px inter;
+  }
+
+  .commands .commands-nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .commands .commands-nav .commands-tablist {
+    width: fit-content;
+  }
+
+  .commands .commands-tablist .command-category {
+    font: 13px inter;
+    padding: 7px 8px;
+  }
+
+  .votes .divisions-tablist {
+    display: none;
+  }
+
+  .commands .commandstab {
+    font: 500 13px inter;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .commands .cmds_list .cmd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(30 41 59/0.4);
+    width: 350px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 30px 0;
+    transition: all 500ms ease;
+    cursor: pointer;
+  }
+
+  .commands .cmd .text h2 {
+    font: 600 15px inter;
+  }
+
+  .commands .cmd .text p {
+    font: 11px inter;
+  }
+
+  .commands .cmd .right p {
+    font: 600 13px inter;
+  }
+
+  .commands .commandserror {
+    font: 500 13px inter;
+    margin-bottom: 30vh;
+  }
+
+  /* Bumps */
+  .bumps .bumpslist-top h1 {
+    font: 19px mont;
+    color: var(--text-color);
+  }
+
+  .bumps .bumpslist-top button {
+    display: none;
+  }
+
+  .bumpcard {
+    max-width: 20rem;
+    height: 24rem;
+  }
+
+  .communities .bumpcard {
+    height: 26rem;
+  }
+
+  .bumpcard.premiumguild::before {
+    all: unset;
+  }
+
+  .bumpcard .guildstats .guildstats-item {
+    font: .7rem inter;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+    padding-left: .4rem;
+    padding-right: .4rem;
+  }
+
+  .bumpcard .guildstats .guildstats-item svg {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .bumpcard .guildstats .guildstats-item.premiumitem svg,
+  .bumpcard .guildstats .guildstats-item.pinitem svg {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .bumpcard .content h2 {
+    font: 600 1rem inter;
+  }
+
+  .bumpcard .guildDesc {
+    font: 13px inter;
+  }
+
+  .bumpcard .categories article {
+    font: 11px inter;
+  }
+
+  .bumpcard .categories article svg {
+    width: 12px;
+  }
+
+  .bumpcard .buttons button {
+    font: 600 12px inter;
+    padding: 7px 10px;
+  }
+
+  .bumpcard .guildfooter p {
+    font: 500 11px inter;
+  }
+
+  .bumpcard .guildfooter img {
+    width: 20px;
+  }
+
+  /* Votes */
+  .votes h1 {
+    margin: 0 20px;
+    font: 18px mont;
+  }
+
+  .votes h1 svg {
+    scale: 90%;
+  }
+
+  .votes .votesicon {
+    padding: .3rem .5rem;
+  }
+
+  .votes .podium {
+    margin: 3vh 0;
+  }
+
+  .votes .podium .podium-item {
+    width: 90%;
+    margin: 1vh 0;
+    padding: 10px;
+  }
+
+  .podium .podium-item .position {
+    display: none;
+  }
+
+  .podium .podium-item .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .podium .podium-item .content {
+    display: flex;
+    align-items: center;
+  }
+
+  .podium .podium-item .content img {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .podium .podium-item .content h2 {
+    font: 600 16px inter;
+  }
+
+  .podium .podium-item .content p {
+    font: 11px inter;
+  }
+
+  .podium .podium-item .content svg {
+    margin: -5px;
+    scale: 70%;
+  }
+
+  .podium .podium-item .buttons button {
+    padding: 7px 10px;
+    margin: 0 5px;
+    font: 500 12px inter;
+  }
+
+  .podium .podium-item .buttons button:last-child {
+    display: none;
+  }
+
+  .votes .searchguild {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .votes .searchguild .input {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .votes .searchguild .input input {
+    width: 300px;
+    font: 15px inter;
+  }
+
+  .votes .searchguild .input button {
+    padding: 7px 20px;
+    width: fit-content;
+  }
+
+  .votes .searchguild .error {
+    width: 90%;
+  }
+
+  .votes .notpodium .notpodium-item {
+    width: 350px;
+  }
+
+  .notpodium .notpodium-item .content img {
+    width: 65px;
+  }
+
+  .notpodium .notpodium-item .content h2 {
+    font: 18px mont;
+    margin-bottom: 5px;
+  }
+
+  .notpodium .notpodium-item .content p {
+    font: 11px inter;
+  }
+
+  .notpodium .notpodium-item .buttons button {
+    display: none;
+  }
+
+  /* Guild Info */
+  .guildinfo h1 {
+    font: 18px mont;
+  }
+
+  .guildinfo .guildcard {
+    padding: 10px 5px;
+    width: 90%;
+    height: 100%;
+  }
+
+  .guildinfo .guildcard .guildimages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .guildinfo .guildcard .banner,
+  .guildinfo .guildcard .banner img {
+    width: 100%;
+    height: 8rem;
+  }
+
+  .guildinfo .guildcard .avatar img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .guildinfo .guildcard .avatar img.decoration {
+    width: 100px;
+    height: 100px;
+  }
+
+  .guildinfo .guildcard .headings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 3vh 0;
+  }
+
+  .guildinfo .guildcard .right {
+    display: flex;
+    align-items: center;
+  }
+
+  .guildinfo .guildcard .headings h2 {
+    font: 18px mont;
+  }
+
+  .guildinfo .guildcard .headings h2 span {
+    font: 500 15px inter;
+  }
+
+  .guildinfo .guildcard .headings p {
+    font: 11px inter;
+  }
+
+  .guildinfo .guildcard .headings section {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .guildinfo .guildcard .headings section p {
+    margin: 5px 0 0 0;
+  }
+
+  .guildinfo .guildcard .headings span img {
+    width: 20px;
+  }
+
+  .guildinfo .guildcard .headings button {
+    padding: 10px 15px;
+    font: 500 13px inter;
+  }
+
+  .guildinfo .guildcard .headings .modalopen {
+    margin-right: 10px;
+    padding: .2rem .4rem;
+  }
+
+  .guildinfo .guildcard .headings .guildmodal article {
+    font: 13px inter;
+  }
+
+  .guildinfo .guildcard .headings .guildmodal article svg {
+    width: 15px;
+  }
+
+  .guildinfo .guildcard .headings .sharemodal {
+    top: 120px;
+    right: -20%;
+  }
+
+  .guildinfo .guildcard .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+  }
+
+  .guildinfo .guildcard .content .guildDesc {
+    width: 100%;
+  }
+
+  .guildinfo .content .details {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .guildinfo .content .detailsContent img {
+    width: 20px;
+    margin-bottom: -5px;
+  }
+
+  .guildinfo .content .details .specialcard {
+    display: flex;
+    align-items: center;
+    background-color: var(--cardtransparent-background08);
+    border: 1px solid var(--cardtransparent-border-light);
+    border-radius: 5px;
+    padding: 5px 10px 10px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+
+  .guildinfo .content .details .specialcard img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 7px;
+  }
+
+  .guildinfo .content .details .specialcard span {
+    font: 600 15px inter;
+    color: var(--text-grey);
+  }
+
+  /* Premium */
+  .premium h1 {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 5vh;
+  }
+
+  .premium .premium-subtitle {
+    font-size: 12px;
+    width: 70%;
+  }
+
+  .premium-table {
+    padding: 0 20px;
+  }
+
+  .premium-table img {
+    width: 50px;
+    position: absolute;
+    top: -5%;
+    right: 2%;
+    transform: rotate(20deg);
+    animation: bounce 5s infinite;
+    filter: drop-shadow(0 0 7px rgb(239 180 66/0.5));
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: rotate(20deg) translateY(0);
+    }
+
+    50% {
+      transform: rotate(20deg) translateY(-20px);
+    }
+  }
+
+  th {
+    font: 500 13px inter;
+    padding: 10px 7px;
+  }
+
+  thead th h2 {
+    font: 16px mont;
+  }
+
+  thead th p {
+    font: 11px inter;
+  }
+
+  td {
+    font: 600 11px inter;
+  }
+
+  .premium-table .premium-bg {
+    right: 4%;
+  }
+
+  .premium-faq {
+    display: none;
+  }
+
+  /* Pop Ups */
+  .offline-popup {
+    display: none;
+    position: fixed;
+    bottom: 10%;
+    right: 3%;
+    z-index: 99999;
+    border: 1px solid rgba(241, 6, 6, 0.7);
+    background-color: rgba(220, 17, 1, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 7px;
+    transition: all 500ms ease;
+  }
+
+  .offline-popup:hover {
+    background-color: rgba(220, 17, 1, 0.33);
+    cursor: pointer;
+  }
+
+  .offline-popup h1 {
+    font: 20px mont;
+    margin-bottom: 5px;
+  }
+
+  .offline-popup p {
+    font: 14px inter;
+    margin-top: 5px;
+  }
+
+  .offline-popup .closepopup {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+  }
+
+  .offline-popup .closepopup::before,
+  .offline-popup .closepopup::after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 22px;
+    width: 2px;
+    background-color: #fff;
+  }
+
+  .offline-popup .closepopup:before {
+    transform: rotate(45deg);
+  }
+
+  .offline-popup .closepopup:after {
+    transform: rotate(-45deg);
+  }
+
+  .cookies-popup {
+    bottom: 20px;
+    left: 5%;
+    max-width: 350px;
+  }
+}
