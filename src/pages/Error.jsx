@@ -11,7 +11,6 @@ export const Error = ({ saveError }) => {
     const [svgContent, setSvgContent] = useState(null);
 
     useEffect(() => {
-        document.getElementById('globalbackgroundimage').style.display = 'none';
         if (!error && saveError) error = saveError;
 
         if (errorList.includes(error)) setView(error);
