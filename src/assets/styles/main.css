@@ -88,6 +88,9 @@ hr {
 .app {
   padding: 2rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .top {
@@ -129,12 +132,61 @@ hr {
 
 .floor-plan {
   position: relative;
-  width: 100%;
-  height: 500px;
+  width: 1200px;
+  height: 1500px;
   border: 2px solid #ccc;
   margin-top: 2rem;
   background: #000;
   border-radius: 8px;
+  transform: scale(1);
+  transform-origin: top left;
+}
+
+/* Comptoir */
+.counter {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 100px;
+  background-color: #a0522d;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+/* Séparateur */
+.dividor {
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  background-color: #999;
+}
+
+.dividor-v {
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  rotate: 90deg;
+  border: 2px dashed #999;
+}
+
+/* Zone */
+.zone {
+  position: absolute;
+  font: 600 20px inter;
+}
+
+/* Porte */
+.door {
+  position: absolute;
+  background-color: green;
+  color: white;
+  padding: 2px 6px;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
 .table {
@@ -160,15 +212,39 @@ hr {
   border-radius: 8px;
 }
 
-.table.square {
-  width: 80px;
+.table.rectangle-v {
+  width: 60px;
+  height: 120px;
+  border-radius: 8px;
+}
+
+.table.rectangle-vs {
+  width: 60px;
   height: 80px;
   border-radius: 8px;
 }
 
-.table.round {
+.table.rectangle-s {
   width: 80px;
-  height: 80px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.table.rectangle-l {
+  width: 30px;
+  height: 120px;
+  border-radius: 8px;
+}
+
+.table.square {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.table.round {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
 }
 
