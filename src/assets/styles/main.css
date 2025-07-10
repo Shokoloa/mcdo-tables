@@ -140,7 +140,7 @@ hr {
   background: var(--background-white);
   border-radius: 8px;
   transform: scale(0.7);
-  transform-origin: top left;
+  transform-origin: top center;
 }
 
 /* Comptoir */
