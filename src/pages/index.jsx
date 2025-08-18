@@ -121,6 +121,12 @@ export const Home = () => {
                 {/* Comptoirs */}
                 <div className="counter"><i className="fa-solid fa-bell-concierge"></i> Comptoir</div>
 
+                {/* Couleurs */}
+                <div className="zone-hover playland" style={{ height: '17%' }}></div>
+                <div className="zone-hover sas" style={{ height: '21%', top: '17%', backgroundColor: '#7b2cbf' }}></div>
+                <div className="zone-hover lobby" style={{ height: '62%', top: '38%', backgroundColor: '#e63946' }}></div>
+                <div className="zone-hover bornes" style={{ width: '16%', height: '20%', top: '55%', left: '62%', backgroundColor: '#457b9d' }}></div>
+
                 {/* Entrées */}
                 <div className="door" style={{ top: '80%', left: '0' }}><i className="fa-solid fa-door-open"></i> Porte</div>
                 <div className="door" style={{ top: '27%', right: '0' }}>Porte <i className="fa-solid fa-door-open right"></i></div>

@@ -150,7 +150,7 @@ hr {
   right: 0;
   width: 70%;
   height: 100px;
-  background-color: var(--background);
+  background-color: #6a994e;
   color: var(--background-white);
   text-align: center;
   border-radius: 7px 0 7px 0;
@@ -170,7 +170,8 @@ hr {
   position: absolute;
   width: 200px;
   height: 2px;
-  background-color: #999;
+  background-color: #636262;
+  z-index: 100;
 }
 
 .dividor-v {
@@ -178,7 +179,8 @@ hr {
   width: 50px;
   height: 2px;
   rotate: 90deg;
-  border: 2px dashed #999;
+  border: 2px dashed #636262;
+  z-index: 100;
 }
 
 /* Zone */
@@ -202,6 +204,15 @@ hr {
 
 .zone i {
   margin-right: 7px;
+}
+
+.zone-hover {
+  background-color: #ffbc0d;
+  opacity: 0.5;
+  width: 100%;
+  min-height: 5%;
+  position: absolute;
+  z-index: -99;
 }
 
 /* Porte & poubelles */
