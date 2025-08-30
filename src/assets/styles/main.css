@@ -40,13 +40,13 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--scrollbar);
+  background: #0055ff;
   border-radius: 5px;
 }
 
 @supports not selector(::-webkit-scrollbar) {
   body {
-    scrollbar-color: var(--scrollbar) #232E33;
+    scrollbar-color: #0055ff #232E33;
   }
 }
 

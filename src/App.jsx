@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // CSS
 import "./assets/styles/main.css";
 import "./assets/styles/medias.css";
-import "./assets/styles/themes.css";
 
 const lazyWithDelay = (importFunc, delay = 0) => {
   return lazy(() =>
@@ -70,20 +69,10 @@ const Content = () => {
 };
 
 export const App = () => {
-  const localStorageItem = localStorage.getItem('clickAnimation');
-
   return (
     <Router>
       <Suspense fallback={<Loader />}>
-        {window.innerWidth > 767 && localStorageItem === 'true' ? (
-          <ClickSpark
-            sparkColor='#0055FF'
-            sparkSize={10}
-            sparkRadius={20}
-            sparkCount={8}
-            duration={400}
-          ><Content /></ClickSpark>
-        ) : <Content />}
+        <Content />
       </Suspense>
     </Router >
   )

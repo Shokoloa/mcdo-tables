@@ -33,16 +33,16 @@ const tablesData = [
     { id: '366', numbers: [366, 340], x: 30, y: 58, shape: 'rectangle-v' },
 
     { id: '331', numbers: [331], x: 55, y: 53, shape: 'square' },
-    { id: '330', numbers: [330], x: 55, y: 57, shape: 'rectangle-vs' },
-    { id: '329', numbers: [329], x: 55, y: 63, shape: 'rectangle-vs' },
+    { id: '330', numbers: [330], x: 55, y: 58, shape: 'square' },
+    { id: '329', numbers: [329], x: 55, y: 63.5, shape: 'square' },
     { id: '328', numbers: [328], x: 55, y: 69, shape: 'square' },
 
     { id: '321', numbers: [321, 320], x: 60, y: 80, shape: 'rectangle-l' },
     { id: '315', numbers: [315, 314], x: 78, y: 80, shape: 'rectangle-l' },
 
     { id: '326', numbers: [326], x: 45, y: 73, shape: 'square' },
-    { id: '327', numbers: [327], x: 38, y: 73, shape: 'rectangle-s' },
-    { id: '338', numbers: [338], x: 31, y: 73, shape: 'rectangle-s' },
+    { id: '327', numbers: [327], x: 38, y: 73, shape: 'square' },
+    { id: '338', numbers: [338], x: 31.5, y: 73, shape: 'square' },
     { id: '339', numbers: [339], x: 25, y: 73, shape: 'square' },
 
     { id: '324', numbers: [324], x: 45, y: 79, shape: 'square' },
