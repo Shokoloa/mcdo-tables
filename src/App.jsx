@@ -6,12 +6,12 @@ import "./assets/styles/main.css";
 import "./assets/styles/medias.css";
 
 const lazyWithDelay = (importFunc, delay = 0) => {
-  return lazy(() =>
-    Promise.all([
-      importFunc(),
-      new Promise((resolve) => setTimeout(resolve, delay)),
-    ]).then(([module]) => module)
-  );
+    return lazy(() =>
+        Promise.all([
+            importFunc(),
+            new Promise((resolve) => setTimeout(resolve, delay)),
+        ]).then(([module]) => module)
+    );
 };
 
 // Components
@@ -26,54 +26,54 @@ const Error = lazyWithDelay(() => import("./pages/Error").then(module => ({ defa
 import ErrorBoundary from "./components/ErrorBoundary";
 
 const Loader = () => {
-  return (
-    <main>
-      <Background />
-      <section className="loader">
-        <div className="circle">
-          <div className="dot"></div>
-          <div className="outline"></div>
-        </div>
-        <div className="circle">
-          <div className="dot"></div>
-          <div className="outline"></div>
-        </div>
-        <div className="circle">
-          <div className="dot"></div>
-          <div className="outline"></div>
-        </div>
-        <div className="circle">
-          <div className="dot"></div>
-          <div className="outline"></div>
-        </div>
-      </section>
-    </main >
-  )
+    return (
+        <main>
+            <Background />
+            <section className="loader">
+                <div className="circle">
+                    <div className="dot"></div>
+                    <div className="outline"></div>
+                </div>
+                <div className="circle">
+                    <div className="dot"></div>
+                    <div className="outline"></div>
+                </div>
+                <div className="circle">
+                    <div className="dot"></div>
+                    <div className="outline"></div>
+                </div>
+                <div className="circle">
+                    <div className="dot"></div>
+                    <div className="outline"></div>
+                </div>
+            </section>
+        </main >
+    )
 };
 
 const Content = () => {
-  return (
-    <ErrorBoundary>
-      <div className="text" style={{ transitionDuration: '1s' }}>
-        <Background />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/error/:error" element={<Error />} />
+    return (
+        <ErrorBoundary>
+            <div className="text" style={{ transitionDuration: '1s' }}>
+                <Background />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/error/:error" element={<Error />} />
 
-          <Route path="*" element={<Error />} />
-        </Routes >
-        <ScrollToTop />
-      </div >
-    </ErrorBoundary>
-  )
+                    <Route path="*" element={<Error />} />
+                </Routes >
+                <ScrollToTop />
+            </div >
+        </ErrorBoundary>
+    )
 };
 
 export const App = () => {
-  return (
-    <Router>
-      <Suspense fallback={<Loader />}>
-        <Content />
-      </Suspense>
-    </Router >
-  )
+    return (
+        <Router>
+            <Suspense fallback={<Loader />}>
+                <Content />
+            </Suspense>
+        </Router >
+    )
 }

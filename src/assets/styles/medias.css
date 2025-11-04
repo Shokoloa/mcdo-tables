@@ -8,8 +8,4 @@
 
 @media screen and (max-width: 767px) {
   /*smartphone*/
-
-  .floor-plan {
-    transform: scale(0.3);
-  }
 }
